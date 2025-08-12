@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    background: radial-gradient(circle at top left, #0f0f1f, #140c0c);
+    color: white;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.page-header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.page-header h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.page-header hr {
+    width: 200px;
+    margin: 10px auto;
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+.page {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+#wheel-container {
+    flex: 0 0 400px; /* Fixed width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.role-wheel {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.role {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+}
+
+.content {
+    flex: 1;
+}
+
+#section-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.members-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+
+
+.member-card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.member-card strong {
+    font-size: 14px;
+}
+
+.member-card span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+.members {
+  display: flex;
+  flex-wrap: wrap; /* optional if you want them to wrap to the next line when too many */
+  gap: 12px; /* space between cards */
+  align-items: center;
+}
+.member-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
