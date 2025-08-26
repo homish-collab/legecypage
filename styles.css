@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Cinzel', serif;
-    background: radial-gradient(circle at top left, #0f0f1f, #140c0c);
+    background-image: url('https://t3.ftcdn.net/jpg/04/59/95/60/360_F_459956036_JXcJ0vzTzr2GFFpUcNsCT7CCaSDRKgtt.jpg');
     color: white;
 }
 
@@ -59,18 +59,33 @@ body {
 }
 
 .role-wheel {
-    position: relative;
+   position: relative;
     width: 350px;
     height: 350px;
-    border-radius: 50%;
-    border: 2px solid rgba(255,255,255,0.3);
+    border-top-right-radius: 175px;
+    border-bottom-right-radius: 175px;
+    border: 3px solid rgba(255,255,255,0.4);
+    border-left: none;
+    background: radial-gradient(circle at left center, rgba(255,255,255,0.08), transparent 70%);
+    box-shadow: inset -10px 0 20px rgba(255,255,255,0.2);
 }
-
+.role-wheel::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, #f3ee00, #ff0000);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+}
 .role {
     position: absolute;
     transform: translate(-50%, -50%);
     cursor: pointer;
-    font-size: 12px;
+    font-size: 8px;
     text-align: center;
 }
 
@@ -85,7 +100,9 @@ body {
 
 .members-grid {
     display: grid;
-    gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 30px;
 }
 
 
